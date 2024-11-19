@@ -12,6 +12,9 @@ plants = [
 def tabla():
     return render_template('tabla.html')
 
+@app.route('/', methods=["GET"])
+def index():
+    return render_template('index.html')
     
 if __name__ == "__main__":
     app.run(debug=True)
