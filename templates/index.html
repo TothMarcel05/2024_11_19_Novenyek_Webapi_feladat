@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Főoldal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Üdvözöllek a növények világában!</h1>
+    <img src="{{ url_for('static', filename='images/plant.jpg') }}" alt="Növény képe" width="500">
+    <a href="/tabla">Nézd meg a növények táblázatát!</a>
 </body>
 </html>
 
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 
 
-<img src="{{ url_for('static', filename='images/plant.jpg') }}" alt="Növény képe" width="500">
+
