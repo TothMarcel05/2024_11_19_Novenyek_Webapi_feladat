@@ -5,3 +5,6 @@ plants = [
     {"name": "Kaktusz", "type": "Pozsgás", "feature": "Szárazságtűrő"}
 ]
 
+@app.route('/tabla', methods=["GET"])
+def tabla():
+    return render_template('tabla.html')
