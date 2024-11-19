@@ -1,7 +1,37 @@
+body{
+    background-color: lightgoldenrodyellow;
+
+}
 table {
     border-style: solid;
     border-width: auto;
     border-left-width: auto;
     border-right-width: auto;
     border-color: black;
+    display: block;
+    text-align: center;
 }
+
+th{
+    border-style: solid;
+    border-width: auto;
+    border-left-width: auto;
+    border-right-width: auto;
+    border-color: black;
+    display: block;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    display: block;
+    text-align: center;
+}
+
