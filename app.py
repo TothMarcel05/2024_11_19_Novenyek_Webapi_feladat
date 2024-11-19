@@ -1,3 +1,4 @@
+from flask import Flask, render_template, request, redirect, url_for
 
 plants = [
     {"name": "Monstera", "type": "Szobanövény", "feature": "Nagyméretű levelek"},
