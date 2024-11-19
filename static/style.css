@@ -8,8 +8,7 @@ table {
     border-left-width: auto;
     border-right-width: auto;
     border-color: black;
-    display: block;
-    text-align: center;
+
 }
 
 th{
@@ -18,8 +17,7 @@ th{
     border-left-width: auto;
     border-right-width: auto;
     border-color: black;
-    display: block;
-    text-align: center;
+
 }
 h1{
     text-align: center;
