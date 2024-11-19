@@ -2,6 +2,9 @@ from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
+plants = []
+plant = []
+
 plants = [
     {"name": "Monstera", "type": "Szobanövény", "feature": "Nagyméretű levelek"},
     {"name": "Bambusz", "type": "Dísznövény", "feature": "Gyors növekedés"},
@@ -10,11 +13,13 @@ plants = [
 
 @app.route('/tabla', methods=["GET"])
 def tabla():
-    return render_template('tabla.html')
+    return render_template('tabla.html', plants=plants)
+
 
 @app.route('/', methods=["GET"])
 def index():
     return render_template('index.html')
-    
+
+
 if __name__ == "__main__":
     app.run(debug=True)
