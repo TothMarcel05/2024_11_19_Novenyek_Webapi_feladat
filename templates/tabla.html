@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Növények</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    {% if plants %}
+
+
     <table>
-        {% if plants %}
-        {% for i in plants %}
         <tr>
-            <th>{{ plants.name }}</th>
+            <th>Név</th>
+            <th>Típus</th>
+            <th>Jellemző</th>
+        </tr>
+        {% for plants in plants %}
+        <tr>     
             <th>{{ plants.type }}</th>
+            <th>{{ plants.name }}</th>
             <th>{{ plants.feature }}</th>
         </tr>
+
+
         {% endfor%}
 
         {% endif %}
