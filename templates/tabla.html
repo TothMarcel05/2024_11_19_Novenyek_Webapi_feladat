@@ -6,9 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    {% for i in plants %}
-    {% print ("{0} {1} {2}".format(i["name"], i["type"], i["feature"])) %}
-    {% endfor %}
+    <table>
+        {% if plants %}
+        {% for i in plants %}
+        <tr>
+            <th>{{ plants.name }}</th>
+            <th>{{ plants.type }}</th>
+            <th>{{ plants.feature }}</th>
+        </tr>
+        {% endfor%}
+
+        {% endif %}
+    </table>
+
 
 </body>
 </html>
